@@ -18,3 +18,10 @@ const render = (resourse) => {
     }
     ulEl.innerHTML = listItems
 }
+
+inputBtn.addEventListener("click", function() {
+    resourses.push(inputEl.value)
+    inputEl.value = ""
+    localStorage.setItem("resources", JSON.stringify(resourses) )
+    render(resourses)
+})
