@@ -15,6 +15,12 @@ input {
     box-sizing: border-box;
     border: 1px solid var(--blue);
     margin-bottom: 10px;
+    text-indent: 5px;
+    letter-spacing: 2px;
+}
+
+input:focus {
+    outline: 0.2px solid var(--blue);
 }
 
 button {
@@ -56,5 +62,5 @@ li {
 a {
     color: var(--blue);
     text-decoration: none;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
 }
