@@ -4,7 +4,7 @@ const inputBtn = document.getElementById("input-btn")
 const ulEl = document.getElementById("ul-el")
 const deleteBtn = document.getElementById("delete-btn")
 const tabBtn = document.getElementById("tab-btn")
-const leadsFromLocalStorage = JSON.parse( localStorage.getItem("resources") )
+const resourceFromLocalStorage = JSON.parse( localStorage.getItem("resources") )
 
 const render = (resourse) => {
     let listItems = ""
@@ -20,8 +20,8 @@ const render = (resourse) => {
     ulEl.innerHTML = listItems
 }
 
-if (leadsFromLocalStorage) {
-    resourses = leadsFromLocalStorage
+if (resourceFromLocalStorage) {
+    resourses = resourceFromLocalStorage
     render(resourses)
 }
 
