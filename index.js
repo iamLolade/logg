@@ -33,3 +33,9 @@ tabBtn.addEventListener("click", function(){
         render(resourses)
     })
 })
+
+deleteBtn.addEventListener("dblclick", function() {
+    localStorage.clear()
+    resourses = []
+    render(resourses)
+})
