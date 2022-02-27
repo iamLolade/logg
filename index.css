@@ -1,3 +1,7 @@
+:root {
+    --blue: #418293;
+}
+
 body {
     margin: 0;
     padding: 10px;
@@ -9,15 +13,26 @@ input {
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
-    border: 1px solid #418293;
-    margin-bottom: 4px;
+    border: 1px solid var(--blue);
+    margin-bottom: 10px;
 }
 
 button {
-    background: #418293;
+    background: var(--blue);
     color: white;
     padding: 10px 20px;
-    border: 1px solid #418293;
+    border: 1px solid var(--blue);
     font-weight: bold;
     border-radius: 3px;
+    cursor: pointer;
+    transition: 0.8s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
 }
