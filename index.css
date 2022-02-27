@@ -35,4 +35,26 @@ button:hover {
 .buttons {
     display: flex;
     justify-content: space-evenly;
+    margin-left: 0;
+}
+
+#delete-btn {
+    background: white;
+    color: var(--blue);
+}
+
+ul {
+    margin-top: 20px;
+    list-style: none;
+    padding-left: 0;
+}
+
+li {
+    margin-top: 5px;
+}
+
+a {
+    color: var(--blue);
+    text-decoration: none;
+    letter-spacing: 1px;
 }
