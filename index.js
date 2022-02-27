@@ -25,3 +25,11 @@ inputBtn.addEventListener("click", function() {
     localStorage.setItem("resources", JSON.stringify(resourses) )
     render(resourses)
 })
+
+tabBtn.addEventListener("click", function(){    
+    chrome.tabs.query({active: true, currentWindow: true}, function(tabs){
+        resourses.push(tabs[0].url)
+        localStorage.setItem("myLeads", JSON.stringify(resourses) )
+        render(resourses)
+    })
+})
