@@ -61,6 +61,7 @@ li {
     margin-top: 5px;
     display: flex;
     justify-content: space-between;
+    border-bottom: 3px solid rgba(68, 68, 68, 0.048);
 }
 
 a {
@@ -68,6 +69,7 @@ a {
     text-decoration: none;
     letter-spacing: 0.5px;
     font-size: 1.2rem;
+    margin-top: 15px;
 }
 
 .trash {
@@ -78,4 +80,5 @@ a {
 
 img {
     height: 30px;
+    margin-bottom: 5px;
 }
