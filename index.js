@@ -14,6 +14,7 @@ const render = (resourse) => {
                 <a target='_blank' href='${resourse[i]}'>
                     ${resourse[i]}
                 </a>
+                <button class="trash"><img src="./bin.png" alt="trash"/></button>
             </li>
         `
     }
@@ -45,3 +46,4 @@ deleteBtn.addEventListener("dblclick", function() {
     resourses = []
     render(resourses)
 })
+

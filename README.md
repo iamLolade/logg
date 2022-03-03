@@ -7,4 +7,4 @@
 * log the current tab, and 
 * delete all logs.
 
-![Screenshot](preview.png)
+![Screenshot](brandLogo.png)
